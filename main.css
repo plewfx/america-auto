@@ -1,0 +1,237 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    line-height: 1.5;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Unbounded";
+    background-color: black;
+    color: white;
+}
+
+.header {
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.logo span {
+    font-size: 20px;
+}
+
+.header ul {
+    display: flex;
+    gap: 20px;
+}
+
+
+.header ul li:hover a {
+    text-decoration: underline;
+}
+
+.telephone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.telephone img {
+    width: 30px;
+}
+
+.telephone span {
+    font-size: 18px;
+}
+
+.hero {
+    padding: 250px 0 100px;
+    background-image: url('./background.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h1 span {
+    color: red;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.hero img {
+    width: 50px;
+    filter: invert(100%);
+}
+
+.about {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about .container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 75%;
+}
+
+.about h2 {
+    font-size: 80px;
+    color: red;
+}
+
+.about p {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.catalog {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 100px 0;
+}
+
+.catalog > .container > ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: baseline;
+    gap: 50px;
+}
+
+.catalog li img {
+    width: 100%;
+}
+
+.catalog li {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.catalog li ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.catalog li ul li {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.reviews {
+    padding: 100px 0;
+}
+
+.reviews h2 {
+    font-size: 80px;
+    color: red;
+    text-align: center;
+}
+
+.reviews .container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.reviews ul {
+    display: flex;
+    gap: 20px;
+}
+
+.reviews li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.reviews li h4 {
+    font-size: 20px;
+}
+
+.reviews li q {
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 300;;
+}
